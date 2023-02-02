@@ -10,6 +10,7 @@ import 'package:importmanagementsystemonline/screens/stone_sale_screen.dart';
 import '../model/lc.dart';
 import '../model/stone.dart';
 import 'chip_stone_pur_screen.dart';
+import 'chip_stone_sale_screen.dart';
 import 'coal_lc_list_screen.dart';
 import 'coal_pur_list_screen.dart';
 import 'coal_sale_screen.dart';
@@ -210,6 +211,12 @@ class _DashboardState extends State<Dashboard> {
                   },
                     'assets/images/offline.jpg',
                     'Offline Transactions',
+                  ),
+                  getImageButton(() {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ChipStoneSaleScreen()));
+                  },
+                    'assets/images/stone.jpg',
+                    'Chip Stone Sale',
                   ),
 
                 ],

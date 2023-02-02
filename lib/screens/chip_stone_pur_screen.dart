@@ -87,7 +87,7 @@ class _ChipStonePurScreenState extends State<ChipStonePurScreen> {
                     double.parse(doc["oneToSix"]))
                 .toStringAsFixed(3));
             _half = double.parse(
-                (double.parse(_half.toString()) - double.parse(doc["half"]))
+                (double.parse(_half.toString()) + double.parse(doc["half"]))
                     .toStringAsFixed(3));
             _fiveToTen = double.parse((double.parse(_fiveToTen.toString()) +
                     double.parse(doc["fiveToTen"]))
